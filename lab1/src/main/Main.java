@@ -1,4 +1,4 @@
-package main;
+﻿package main;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -59,7 +59,4 @@ public class Main extends Application {
     }
 
 
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
