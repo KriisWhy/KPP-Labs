@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/out/production/labka/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/out/production/labka/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unt/sample/ComplexNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unt/sample/ComplexNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unt/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unt/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,8 +73,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1Z6uRLqUtoPFKbRZrBW8iTrVzvR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -74,16 +88,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -187,21 +204,29 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="409" key="GridCell.Tab.0.bottom" timestamp="1584183276631">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1585375762986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="409" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584183276631" />
-    <state width="1877" height="409" key="GridCell.Tab.0.center" timestamp="1584183276631">
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585375762986" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1585383471567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="409" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584183276631" />
-    <state width="1877" height="409" key="GridCell.Tab.0.left" timestamp="1584183276631">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585383471567" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1585383471567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="409" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584183276631" />
-    <state width="1877" height="409" key="GridCell.Tab.0.right" timestamp="1584183276631">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585383471567" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1585383471566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="409" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584183276631" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585383471566" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1585383471567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585383471567" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1585371387429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585371387429" />
   </component>
 </project>

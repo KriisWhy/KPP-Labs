@@ -1,5 +1,6 @@
 package main;
 
+
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
@@ -10,6 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.layout.ColumnConstraints;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 
 
 public class Main extends Application {
@@ -40,22 +43,30 @@ public class Main extends Application {
         root.add(height_text,1,1);
         root.add(label_square,1,2);
         root.add(label_perimeter,1,2);
-        btn_square.setOnAction(actionEvent -> {
-            int a = Integer.parseInt(length_text.getText());
-            int b = Integer.parseInt(height_text.getText());
-            double c = a*b;
-            label_square.setText(""+c);
+        btn_square.setOnAction(new EventHandler<ActionEvent>()
+        {
+            public void handle(ActionEvent e) {
+                double a = Double.parseDouble(length_text.getText());
+                double b = Double.parseDouble(height_text.getText());
+                double c = a * b;
+                label_square.setText("" + c);
+            }
         });
-        btn_perimeter.setOnAction(actionEvent -> {
-            int a = Integer.parseInt(length_text.getText());
-            int b = Integer.parseInt(height_text.getText());
-            double c = 2*(a + b);
-            label_perimeter.setText(""+c);
+        btn_perimeter.setOnAction(new EventHandler<ActionEvent>()
+            {
+                public void handle(ActionEvent e){
+                double a = Double.parseDouble(length_text.getText());
+                double b = Double.parseDouble(height_text.getText());
+                double c = 2 * (a + b);
+                label_perimeter.setText("" + c);
+            }
         });
         primaryStage.setTitle("Laba 1");
-        primaryStage.setScene(new Scene(root, 350, 275));
+        primaryStage.setScene(new Scene(root, 350, 150));
         primaryStage.show();
     }
-
+    public static void main(String[] args) {
+        launch(args);
+    }
 
 }

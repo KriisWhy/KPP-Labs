@@ -8,14 +8,14 @@ public class ComplexNumber extends Number {
     private double im;
 
     public ComplexNumber (double re, double im) {
-        super();
+
         this.re = re;
         this.im = im;
     }
 
 
     public ComplexNumber(String value) {
-        super(value);
+
         StringTokenizer st = new StringTokenizer (value, "+-i", true);
         if (st.hasMoreTokens()) {
             String sa = st.nextToken().trim();
@@ -34,15 +34,7 @@ public class ComplexNumber extends Number {
                 }
                 im = Double.parseDouble (sb);
             }
-            if (st.hasMoreTokens()) {
-                String si = st.nextToken().trim();
-                if (!si.equals ("i"))
-                    throw new IllegalArgumentException
-                            (value + " is not a complex number");
-                if (st.hasMoreTokens())
-                    throw new IllegalArgumentException
-                            (value + " is not a complex number");
-            } else
+             else
                 throw new IllegalArgumentException
                         (value + " is not a complex number");
         } else
@@ -70,7 +62,7 @@ public class ComplexNumber extends Number {
         else return " - ";
     }
 
-    @Override
+
     public String toString() {
         String string;
         if (im == 1 || im == -1) {
