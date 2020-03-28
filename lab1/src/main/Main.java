@@ -1,4 +1,4 @@
-﻿package main;
+package main;
 
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -26,7 +26,6 @@ public class Main extends Application {
         GridPane root = new GridPane();
         root.getColumnConstraints().add(new ColumnConstraints(90));
         root.getColumnConstraints().add(new ColumnConstraints(250));
-        root.getColumnConstraints().add(new ColumnConstraints(70));
         GridPane.setMargin(btn_square, new Insets(10));
         GridPane.setMargin(btn_perimeter, new Insets(10));
         GridPane.setHalignment(label_length, HPos.CENTER);
