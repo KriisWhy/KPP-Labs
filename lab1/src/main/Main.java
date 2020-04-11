@@ -43,24 +43,18 @@ public class Main extends Application {
         root.add(height_text,1,1);
         root.add(label_square,1,2);
         root.add(label_perimeter,1,2);
-        btn_square.setOnAction(new EventHandler<ActionEvent>()
-        {
-            public void handle(ActionEvent e) {
-                double a = Double.parseDouble(length_text.getText());
-                double b = Double.parseDouble(height_text.getText());
-                double c = a * b;
-                label_square.setText("" + c);
-            }
+        btn_square.setOnAction(e -> {
+            double a = Double.parseDouble(length_text.getText());
+            double b = Double.parseDouble(height_text.getText());
+            double c = a * b;
+            label_square.setText("" + c);
         });
-        btn_perimeter.setOnAction(new EventHandler<ActionEvent>()
-            {
-                public void handle(ActionEvent e){
-                double a = Double.parseDouble(length_text.getText());
-                double b = Double.parseDouble(height_text.getText());
-                double c = 2 * (a + b);
-                label_perimeter.setText("" + c);
-            }
-        });
+        btn_perimeter.setOnAction(e -> {
+        double a = Double.parseDouble(length_text.getText());
+        double b = Double.parseDouble(height_text.getText());
+        double c = 2 * (a + b);
+        label_perimeter.setText("" + c);
+    });
         primaryStage.setTitle("Laba 1");
         primaryStage.setScene(new Scene(root, 350, 150));
         primaryStage.show();

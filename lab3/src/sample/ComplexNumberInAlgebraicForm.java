@@ -1,38 +1,36 @@
 package sample;
 
+import java.text.DecimalFormat;
 import java.util.StringTokenizer;
 
-public class ComplexNumber extends Number {
+public class ComplexNumberInAlgebraicForm extends AbstractNumber {
 
     private double re;
     private double im;
 
-    public ComplexNumber (double re, double im) {
-
+    public ComplexNumberInAlgebraicForm(double re, double im) {
+        super();
         this.re = re;
         this.im = im;
     }
 
-
-    public ComplexNumber(String value) {
-        super(value);
+    public ComplexNumberInAlgebraicForm(String value) {
         StringTokenizer st = new StringTokenizer (value, "+-i", true);
         if (st.hasMoreTokens()) {
             String sa = st.nextToken().trim();
             if (st.hasMoreTokens()) {
                 if (sa.equals ("+")) sa = st.nextToken().trim();
                 if (sa.equals ("-")) sa = "-" + st.nextToken().trim();
-                if (sa.equals ("i")) throw new IllegalArgumentException
-                        (value + " is not a complex number");
+                if (sa.equals ("i")) throw new IllegalArgumentException (value + " is not a complex number");
             }
-            re = Double.parseDouble (sa);
+            re = Double.parseDouble (sa.replace(',','.'));
             if (st.hasMoreTokens()) {
                 String sb = st.nextToken().trim();
                 if (st.hasMoreTokens()) {
                     if (sb.equals ("+")) sb = st.nextToken().trim();
                     if (sb.equals ("-")) sb = "-" + st.nextToken().trim();
                 }
-                im = Double.parseDouble (sb);
+                im = Double.parseDouble (sb.replace(',','.'));
             }
             if (st.hasMoreTokens()) {
                 String si = st.nextToken().trim();
@@ -42,47 +40,46 @@ public class ComplexNumber extends Number {
                 if (st.hasMoreTokens())
                     throw new IllegalArgumentException
                             (value + " is not a complex number");
-            } else
+            }
+             else
                 throw new IllegalArgumentException
                         (value + " is not a complex number");
         } else
             throw new IllegalArgumentException (value + " is not a complex number");
     }
 
-    public double getRe() {
-        return re;
-    }
+    public double getRe() { return re; }
 
     public double getIm() {
         return im;
     }
 
-    public static ComplexNumber add(ComplexNumber cn1, ComplexNumber cn2) {
-        return new ComplexNumber(cn1.getRe() + cn2.getRe(), cn1.getIm() + cn2.getIm());
-    }
-
-    public static ComplexNumber dif(ComplexNumber cn1, ComplexNumber cn2) {
-        return new ComplexNumber(cn1.getRe() - cn2.getRe(), cn1.getIm() - cn2.getIm());
-    }
-
-    private String sign() {
-        if (im > 0) return " + ";
-        else return " - ";
-    }
-
-
+    @Override
     public String toString() {
-        String string;
-        if (im == 1 || im == -1) {
-            if (re == 0) {
-                string = sign() + "i";
-            } else {
-                string = re + sign() + "i";
-            }
-        } else {
-            string = re + sign() + Math.abs(im) + "i";
-        }
-        return string;
+        return toCartesianForm();
     }
 
+    public String toCartesianForm() {
+        DecimalFormat df = new DecimalFormat("##0.00");
+        String real = df.format(getRe());
+        String imaginaries = df.format(getIm());
+        String sign = getIm() < 0 ? "" : "+";
+        return real + sign + imaginaries + "i";
+    }
+
+    public double getArgument() {
+        if(im == 0 && re == 0) throw new IllegalArgumentException ("Forbidden combination");
+        return Math.atan(im / re);
+    }
+
+    public double getModule() {
+        return Math.sqrt(re * re + im * im);
+    }
+
+    public String toExponencialForm() {
+        DecimalFormat df = new DecimalFormat("##0.00");
+        String module = df.format(getModule());
+        String argument = df.format(getArgument());
+        return module + "e^" + argument + "i";
+    }
 }

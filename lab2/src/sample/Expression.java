@@ -2,8 +2,8 @@ package sample;
 
 
 public class Expression {
-    static Number[] array = new Number[2];
-    static char operation;
+    Number[] array = new Number[2];
+    char operation;
 
     public Expression (Number z1, Number z2, char operation) {
         this.array[0] = z1;
